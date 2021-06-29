@@ -32,6 +32,15 @@
         ga('send', 'pageview');
     </script>
     <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script type="text/javascript">
+      var ezstandalone = ezstandalone || {};
+      ezstandalone.cmd = ezstandalone.cmd || [];
+      ezstandalone.cmd.push(function() {
+      ezstandalone.define(100,101);
+      ezstandalone.enable();
+      ezstandalone.display();
+      });
+    </script>
     <style id="criticalCSS"></style>
     <!-- Add above the fold styles for faster load time. -->
 </head>
@@ -427,6 +436,7 @@
                 <!-- Ezoic - sidebar_bottom - sidebar_bottom -->
                 <div id="ezoic-pub-ad-placeholder-101"> </div>
                 <!-- End Ezoic - sidebar_bottom - sidebar_bottom -->
+
                 <!-- <% if (locals.infolinks_pid) { %>
                 <script type='text/javascript'>
                   var infolinks_pid = <%= locals.infolinks_pid %>;
